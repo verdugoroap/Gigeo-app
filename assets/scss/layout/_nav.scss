@@ -1,0 +1,101 @@
+.navbar{
+    height: 100px;
+    background-color: $white;
+    justify-content: space-between;
+    &__name{
+        color: $swamp!important;
+        font-family: $secondary-font;
+        font-weight: bold;
+        font-size: $font-size-xxx-large;
+        padding-left: 20px;
+        span{
+            font-size: xx-small;
+            font-weight: 400;
+            position: absolute;
+        }
+    @include respond-to ($min-laptop){
+        padding-left: 70px;
+    }
+
+}
+    &__menu{
+        display: none;
+        @include respond-to($min-laptop){
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__menuList{
+        flex-direction: row;
+    }
+    &__menuList:last-child{
+        margin-right: 48px;
+    }
+    &__link{
+        margin-left:32px;
+        color: $swamp!important;
+        font-size: 20px;   
+    }
+    &__burgerMenu{
+        padding: 20px 20px;
+        @include respond-to($min-laptop){
+            display: none;
+        }
+    }
+    &__input{
+        display: none;
+        z-index: 2;
+        position: absolute;
+        top: 10px;
+        right: 16px;
+
+    }
+    &__burger{
+        background-color: $gray;
+        display: block;
+        width: 30px;
+        height: 4px;
+        position: relative;
+        z-index: 1;
+        -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+            transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+
+    }
+    .burger1{
+        color: $gray!important;
+        -webkit-transform-origin: 10% 0%;
+            transform-origin: 10% 0%;
+            margin-bottom: 5px;
+    }
+    .burger2 {
+        color: $gray!important;
+        margin-bottom: 5px;
+    }
+    .burger3 {
+        color: $gray!important;
+        -webkit-transform-origin: 10% 100%;
+        transform-origin: 10% 100%;
+    }
+    &__input:checked~ul {
+        width: 100%;
+        -webkit-transition: width 0.3s ease-out;
+        transition: width 0.3s ease-out;
+    }
+    &__input:checked~label .burger1 {
+        opacity: 1;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #000000;
+    }
+    &__input:checked~label .burger2 {
+        opacity: 0;
+    }
+    &__input:checked~label .burger3 {
+        opacity: 1;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background-color: #000000;
+    }
+}

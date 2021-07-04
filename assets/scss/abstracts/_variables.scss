@@ -1,0 +1,34 @@
+/*
+Link Google Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Spartan:wght@200;300;400&display=swap');
+
+/*
+colors
+*/
+
+$swamp: #001614;
+$gray: #888;
+$silver: #CCC;
+$white: #FFF;
+$sky-blue: #79DEE7;
+$persimmon: #FF565B;
+
+/*
+fonts
+*/
+
+$lato: 'Lato',
+sans-serif;
+$lato-regular: 400;
+$lato-bold:700;
+$lato-maxbold: 900;
+$spartan: 'Spartan',
+sans-serif;
+$spartan-lighter: 200;
+$spartan-light: 300;
+$spartan-regular: 400;
+
+//breakpoints
+$min-laptop: 768px;

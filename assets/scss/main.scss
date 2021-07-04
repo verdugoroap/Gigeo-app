@@ -6,11 +6,15 @@ assets index.html
 sass --watch assets/scss/main.scss:assets/css/style.css 
 */;
 //abstracts
-@import "abstracts/variables";
 @import "abstracts/mixins";
-
+@import "abstracts/variables";
 
 //vendor
+@import "vendor/bootstrap-4.6.0/bootstrap.scss";
 
 //base
 @import "base/reset";
+@import "base/typography";
+
+//layout
+@import "layout/nav";
