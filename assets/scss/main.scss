@@ -9,6 +9,7 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+
 //vendor
 @import "vendor/bootstrap-4.6.0/bootstrap.scss";
 
@@ -18,3 +19,7 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 
 //layout
 @import "layout/nav";
+@import "layout/header";
+
+//components
+@import "components/button";

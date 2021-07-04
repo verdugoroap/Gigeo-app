@@ -1,0 +1,58 @@
+.header {
+    &__banner {
+        background-image: url('../img/image-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1px;
+        margin-bottom: 20px;
+        //laptop
+        @include respond-to($min-laptop) {
+            height: 250px;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        padding: 0 40px;
+    }
+    &__info {
+        display: flex;
+        flex-grow: 1;
+        @include respond-to($min-laptop) {
+            padding-left: 40px;
+        }
+    }
+    &__image {
+        background-image: url('../img/profile-image.png');
+        background-size: cover;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+    &__name {
+        font-family: $primary-font;
+        font-weight: $primary-font-maxbold;
+        font-size: $font-size-xx-large;
+    }
+    &__followers {
+        color: $gray;
+        font-family: $secondary-font;
+    }
+    &__options {
+        display: none;
+        @include respond-to ($min-laptop) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

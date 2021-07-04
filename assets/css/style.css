@@ -10062,4 +10062,88 @@ fonts size
   background-color: #000000;
 }
 
+.header__banner {
+  background-image: url("../img/image-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .header__banner {
+    height: 250px;
+  }
+}
+.header__profile {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 40px;
+}
+.header__info {
+  display: flex;
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  .header__info {
+    padding-left: 40px;
+  }
+}
+.header__image {
+  background-image: url("../img/profile-image.png");
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+.header__name {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+.header__followers {
+  color: #888;
+  font-family: "Spartan", sans-serif;
+}
+.header__options {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__options {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.button {
+  border: 0;
+  color: #FFF;
+  font-family: "Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 0 15px;
+  height: 40px;
+}
+.button--red {
+  background-color: #FF565B;
+}
+.button--blue {
+  background-color: #79DEE7;
+}
+@media (min-width: 768px) {
+  .button--red {
+    margin-right: 30px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
