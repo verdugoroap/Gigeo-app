@@ -1,0 +1,27 @@
+.main{
+    padding-left: 100px;
+    padding-right: 70px;
+    &__tittle{
+        justify-content: flex-start;
+        h2{
+            font-size: $font-size-xx-large;
+            font-family: $secondary-font;
+            font-weight: bold;
+            margin: 30px 30px;
+            color: $swamp;
+        }
+    }
+    &__preview{
+        margin-bottom: 10px;
+    }
+    &__name{
+        font-size: $font-size-xx-large;
+        font-family: $primary-font;
+        font-weight: $primary-font-maxbold;
+        margin-bottom: 10px;
+    }
+    &__view{
+        font-family: $secondary-font;
+        color: $gray;
+    }
+}

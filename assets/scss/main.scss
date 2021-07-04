@@ -20,6 +20,7 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 //layout
 @import "layout/nav";
 @import "layout/header";
+@import "layout/main";
 
 //components
 @import "components/button";
